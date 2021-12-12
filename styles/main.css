@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --text-navbar: #f4f4f4;
+}
+
+.mynav{
+    position: fixed;
+    top: 0;
+    /* good for full width */
+    left: 0; 
+    right: 0;
+    color: var(--text-navbar);
+}
+
+.mynav-scrolled{
+    --text-navbar: #000;
+    box-shadow: 0 3px 20px rgb(0, 0, 0, 0.2);
+}
+
+.mynav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.mynav .nav-item{
+    padding: 1rem 1.5rem;
+    float: right;
+    letter-spacing: 1px;
+}
+
+.mynav .nav-item#nav-home{
+    float: left;
+}
+
+#section-home .intro-overlay{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(https://wallpaperaccess.com/full/5499054.jpg);
+}
+
+#section-home{
+    margin: 0 auto;
+    height: 90vh;
+}
+
+#section-home .intro-overlay div{
+    display: flex;
+    padding-top: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-overlay h1{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 350%;
+}
+
+#section-home #introduction{
+    color: white;
+}
+
+
+#section-about{
+    height: 100vh;
+    
+}
+
+#section-edu{
+    height: 100vh;
+    
+}
+
+#section-projects{
+    height: 100vh;
+    
+}
