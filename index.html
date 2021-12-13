@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Yingeng Liu</title>
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/normalize.css">
-    </head>
 
-    <body>
-        <!-- https://chrlng.github.io/#about-section
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yingeng Liu</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+
+<body>
+    <!-- https://chrlng.github.io/#about-section
         https://bchiang7.github.io/v1/ -->
-        <nav class="mynav">
-            <a href="#section-projects" class="nav-item">PROJECTS</a>
-            <a href="#section-edu" class="nav-item">EDUCATION</a>
-            <a href="#section-about" class="nav-item">ABOUT</a>
-            <a href="#section-home" class="nav-item" id="nav-home">YINGENG LIU</a>
-        </nav>
+    <header class="mynav">
+        <h2 class="nav-home"><a href="#section-home">YINGENG LIU</a></h1>
 
-        <!-- Home section -->
-        <section id="section-home">
-            <div class="intro-overlay">
-                <div>
-                    <h1 id="introduction">HI, I'M YINGENG</h1>
-                </div>
-            </div>
-        </section>
+            <nav>
+                <ul>
+                    <li><a href="#section-about" class="nav-item">ABOUT</a></li>
+                    <li><a href="#section-edu" class="nav-item">EDUCATION</a></li>
+                    <li><a href="#section-projects" class="nav-item">PROJECTS</a></li>
+                </ul>
+            </nav>
+    </header>
 
-        <!-- About section -->
-        <section id="section-about">
+
+    <!-- Home section -->
+    <section id="section-home">
+        <div class="intro-overlay">
             <div>
-                some tesxt here
+                <h1 id="introduction">HI, I'M YINGENG</h1>
             </div>
-        </section>
-
-        <section id="section-edu">
             <div>
-                some other text
+                <a href="#section-about" class="arrow-down"></a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="section-projects">
-            <div>
-                some other other text
-            </div>
-        </section>
+    <!-- About section -->
+    <section id="section-about">
+        <div class="container">
+            <img src="./images/ProfilePicture.jpg" alt="yingeng-picture" class="card-img">
+            <p>askjdklas jdklasjd kljaskljd lkasjdkl jaslkjd </p>
+        </div>
+    </section>
 
-        <script src="./scripts/main.js"></script>
-    </body>
+    <section id="section-edu">
+        <div>
+            some other text
+        </div>
+    </section>
+
+    <section id="section-projects">
+        <div>
+            some other other text
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
 </html>
