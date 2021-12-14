@@ -12,12 +12,12 @@ html{
 .container{
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-/* section{
-    margin-top: 4rem;
-} */
+section{
+    padding-top: 60px;
+}
 
 header{
     position: fixed;
@@ -99,6 +99,7 @@ nav a:hover::before{
 #section-home{
     margin: 0 auto;
     height: 90vh;
+    padding: 0;
 }
 
 #section-home .intro-overlay div{
@@ -129,19 +130,57 @@ nav a:hover::before{
 
 #section-about{
     height: 100vh;
-    padding-top: 50px;
-    
+}
+
+#section-about h1{
+    text-align: center;
+}
+
+#section-about p{
+    width: 40rem;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    font-weight: 500;
+    text-align: center;
 }
 
 .card-img{
-    width: 20rem;
-    height: 30rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#section-exp{
+    height: 100vh;
+}
+
+#section-exp .university-container{
+    display: flex;
+    align-items: center;
+}
+
+#section-exp .rose-logo{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+#section-exp .body-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-exp .tech-img{
+    width: 7rem;
+    height: 7rem;
     object-fit: contain;
 }
 
-#section-edu{
-    height: 100vh;
-    
+#section-exp .tech-img-sp{
+    object-fit: cover;
 }
 
 #section-projects{
