@@ -187,3 +187,50 @@ nav a:hover::before{
     height: 100vh;
     
 }
+
+.proj-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.ind-proj{
+    position: relative;
+}
+
+.proj-pic{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.proj-desc-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    transition: opacity 250ms ease-in-out;
+}
+
+.proj-desc-container:hover{
+    opacity: 0.85;
+}
+
+.proj-desc{
+    text-align: center;
+}
+
+footer{
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    background-color: #222;
+}
