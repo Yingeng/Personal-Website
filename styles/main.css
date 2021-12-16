@@ -3,6 +3,7 @@
 html{
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
+    word-wrap: break-word;
 }
 
 :root{
@@ -17,6 +18,7 @@ html{
 
 section{
     padding-top: 60px;
+    margin-bottom: 15rem;
 }
 
 header{
@@ -29,7 +31,7 @@ header{
     transition: all ease-in-out 350ms;
 }
 
-header h2{
+header h3{
     font-weight: 250;
 }
 
@@ -129,7 +131,7 @@ nav a:hover::before{
 }
 
 #section-about{
-    height: 100vh;
+    width: 100vw;
 }
 
 #section-about h1{
@@ -152,7 +154,8 @@ nav a:hover::before{
 }
 
 #section-exp{
-    height: 100vh;
+    background-color: #393D47;
+    color: white;
 }
 
 #section-exp .university-container{
@@ -161,8 +164,8 @@ nav a:hover::before{
 }
 
 #section-exp .rose-logo{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
     margin-right: 20px;
 }
@@ -184,15 +187,21 @@ nav a:hover::before{
 }
 
 #section-projects{
-    height: 100vh;
-    
+    width: 100vw;
+    text-align: center;
+}
+
+#section-projects h1{
+    margin-bottom: 5rem;
 }
 
 .proj-container{
     display: flex;
-    justify-content: space-evenly;
-    gap: 4rem;
+    justify-content: center;
+    width: 85%;
     flex-wrap: wrap;
+    gap: 6rem;
+    margin: 0 auto;
 }
 
 .ind-proj{
@@ -200,8 +209,8 @@ nav a:hover::before{
 }
 
 .proj-pic{
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 10px;
     object-fit: contain;
 }
@@ -210,13 +219,14 @@ nav a:hover::before{
     position: absolute;
     left: 0;
     top: 0;
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 10px;
     opacity: 0;
     background-color: white;
     display: flex;
     align-items: center;
+    border: 2px gray solid;
     transition: opacity 250ms ease-in-out;
 }
 
@@ -226,6 +236,16 @@ nav a:hover::before{
 
 .proj-desc{
     text-align: center;
+    padding: 20px;
+}
+
+.proj-desc h2{
+    text-decoration: underline;
+}
+
+.proj-desc p{
+    font-size: 17px;
+    font-weight: bolder;
 }
 
 footer{
