@@ -18,7 +18,7 @@ html{
 
 section{
     padding-top: 60px;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 header{
@@ -72,7 +72,7 @@ nav a::before{
     left: 0;
     display: block;
     position: absolute;
-    background: black;
+    background: #393D47;
     transform: scale(0, 1);
     transform-origin: left;
     transition: transform ease-in-out 350ms;
@@ -130,10 +130,6 @@ nav a:hover::before{
     transform: rotate(45deg);
 }
 
-#section-about{
-    width: 100vw;
-}
-
 #section-about h1{
     text-align: center;
 }
@@ -154,8 +150,8 @@ nav a:hover::before{
 }
 
 #section-exp{
-    background-color: #393D47;
     color: white;
+    margin-bottom: 0;
 }
 
 #section-exp .university-container{
@@ -164,6 +160,8 @@ nav a:hover::before{
 }
 
 #section-exp .rose-logo{
+    background-color: white;
+    border-radius: 50%;
     width: 8rem;
     height: 8rem;
     object-fit: cover;
@@ -171,6 +169,7 @@ nav a:hover::before{
 }
 
 #section-exp .body-center{
+    background-color: #393D47;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,13 +185,27 @@ nav a:hover::before{
     object-fit: cover;
 }
 
+#section-exp .tech{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 3px;
+}
+
+#section-exp .spacing{
+    margin: 2rem 0;
+}
+
+#section-exp .resume{
+    color: white;
+    margin: 2rem 0;
+}
+
 #section-projects{
-    width: 100vw;
     text-align: center;
 }
 
 #section-projects h1{
-    margin-bottom: 5rem;
+    margin: 3rem;
 }
 
 .proj-container{
@@ -246,6 +259,15 @@ nav a:hover::before{
 .proj-desc p{
     font-size: 17px;
     font-weight: bolder;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 350ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
 }
 
 footer{
