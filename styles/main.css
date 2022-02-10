@@ -137,7 +137,7 @@ nav a:hover::before{
 }
 
 #section-about p{
-    width: 40rem;
+    max-width: 40rem;
     font-size: 1.2rem;
     margin: 20px auto;
     font-weight: 500;
@@ -152,6 +152,7 @@ nav a:hover::before{
 }
 
 #section-exp{
+    background-color: #393D47;
     color: white;
     margin-bottom: 0;
 }
@@ -171,7 +172,7 @@ nav a:hover::before{
 }
 
 #section-exp .body-center{
-    background-color: #393D47;
+    /* background-color: #393D47; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,9 +205,13 @@ ul.courses li{
 }
 
 #section-exp .tech{
+ 
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
-    padding: 20px 20px 20px 3px;
+    padding: 20px 15px 20px 13px;
 }
 
 #section-exp .spacing{
@@ -237,6 +242,7 @@ ul.courses li{
 
 .ind-proj{
     position: relative;
+    margin: 10px;
 }
 
 .proj-pic{
@@ -295,8 +301,61 @@ footer{
     background-color: #222;
 }
 
-
 footer a{
     color: white;
     padding: 2px;
+}
+
+
+@media (max-width: 770px){
+    #section-exp{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .tech-img{
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 470px){
+    nav li{
+        margin-left: 1em;
+    }
+
+    header h3{
+        display: none;
+    }
+
+    nav {
+        height: 3em;
+        justify-content: center;
+        grid-column: 3/4;
+    }
+
+    header{
+        grid-template-columns: 0.3fr auto minmax(150px, 3fr) 0.4fr;
+    }
+
+    #section-exp .tech{
+        justify-content: space-evenly;
+    }
+
+    #section-about p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #section-exp{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .body-center{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .tech-img{
+        margin-bottom: 10px;
+    }
 }
