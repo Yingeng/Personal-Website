@@ -358,4 +358,16 @@ footer a{
     .tech-img{
         margin-bottom: 10px;
     }
+
+    .fade-in{
+        opacity: 1;
+    }
+
+    #section-home .intro-overlay{
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: url(https://wallpaperaccess.com/full/5499054.jpg);
+    }
 }
