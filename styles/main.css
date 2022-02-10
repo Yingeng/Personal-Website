@@ -364,10 +364,6 @@ footer a{
     }
 
     #section-home .intro-overlay{
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-image: url(https://wallpaperaccess.com/full/5499054.jpg);
+        background-size: cover;
     }
 }
