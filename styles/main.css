@@ -366,4 +366,9 @@ footer a{
     #section-home .intro-overlay{
         background-size: cover;
     }
+
+    h1#introduction{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
