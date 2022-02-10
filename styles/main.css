@@ -124,6 +124,11 @@ nav a:hover::before{
     color: white;
 }
 
+.mobile-introduction{
+    color: white;
+    display: none;
+}
+
 #section-home .arrow-down{
     border: solid #aaa;
     display: inline-block;
@@ -367,8 +372,11 @@ footer a{
         background-size: cover;
     }
 
-    h1#introduction{
-        margin-left: 15px;
-        margin-right: 15px;
+    .mobile-introduction{
+        display: block;
+    }
+
+    #section-home #introduction{
+        display: none;
     }
 }
