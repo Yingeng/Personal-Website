@@ -8,6 +8,7 @@ html{
 
 :root{
     --text-navbar: #f4f4f4;
+    --underline-navbar: white;
 }
 
 .container{
@@ -72,7 +73,7 @@ nav a::before{
     left: 0;
     display: block;
     position: absolute;
-    background: #393D47;
+    background: var(--underline-navbar);
     transform: scale(0, 1);
     transform-origin: left;
     transition: transform ease-in-out 350ms;
@@ -85,6 +86,7 @@ nav a:hover::before{
 
 .mynav-scrolled{
     --text-navbar: #000;
+    --underline-navbar: #393D47;
     background-color: white;
     box-shadow: 0 3px 20px rgb(0, 0, 0, 0.2);
 }
@@ -175,10 +177,26 @@ nav a:hover::before{
     align-items: center;
 }
 
+.university-info{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #section-exp .tech-img{
     width: 7rem;
     height: 7rem;
     object-fit: contain;
+}
+
+.text-center{
+    text-align: center;
+}
+
+ul.courses li{
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 18px;
+    margin-bottom: 6px;
 }
 
 #section-exp .tech-img-sp{
@@ -275,4 +293,10 @@ footer{
     color: white;
     text-align: center;
     background-color: #222;
+}
+
+
+footer a{
+    color: white;
+    padding: 2px;
 }
